@@ -1,0 +1,396 @@
+:root{
+    --primary: #464665;
+    --secondary: #6D4B64;
+    --text: #FFF;
+    --textDark: #333;
+    --accent: #E97A3C;
+    --backgroundSubtle: #EDE2DE;
+
+}
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  /* sora  */
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/sora/v11/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-xo6eeIw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/sora/v11/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-xo6eeIw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/sora/v11/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-xo6eeIw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  body, h1, h2, h3, p{
+    margin: 0;
+  }
+  body{
+    background: var(--text);
+  }
+  .container{
+    background: url('asset/bg.png') no-repeat;
+    max-width: 540px;
+    margin: auto;
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    padding: 0 1.5rem;
+    position: relative;
+  }
+  
+
+  .name{
+    background: url('asset/name.png') no-repeat;
+    background-position: center;
+    height: 350px;
+  }
+
+  .detail{
+    padding-top: 7rem;
+    color: var(--text);
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+  }
+
+  p{
+    font-family: Sora;
+  }
+  .date{
+    background: var(--text);
+    width: fit-content;
+    margin: auto;
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+  }
+
+  .date p{
+    font-family: Sora;
+    color: var(--textDark);
+  }
+
+  .username{
+    background: rgba(20, 20, 20, 0.4);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 1.25rem;
+  }
+
+  .username p{
+    font-family: Sora;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+
+  .cta button{
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-family: Sora;
+    border-radius: 0.5rem;
+    margin-top: 4rem;
+    border: none;
+}
+.primary button{
+    color: var(--text);
+    background: var(--secondary);
+}
+.secondary button{
+    color: var(--textDark);
+    background: var(--text);
+}
+/* styling halaman content  */
+.containerContent{
+    max-width: 540px;
+    margin: auto;
+    text-align: center;
+  }
+  
+.hero{
+    background: url('asset/bg-hero.png') no-repeat;
+    background-size: cover;
+    padding: 3.75rem 2rem;
+    color: var(--text);
+    
+}
+.detailWedding{
+    display: grid;
+    gap: 0.5rem;
+}
+.hero p{
+    font-family: Sora;
+}
+.hero h1{
+    font-family: 'Playfair Display', serif;
+}
+
+/* countdown  */
+.emoji{
+    display: none;
+  }
+  
+  ul{
+    display: flex;
+    gap: 1rem;
+  }
+  li{
+    list-style: none;
+    background: var(--primary);
+    padding: 1rem;
+    color: var(--text);
+    border-radius: 0.25rem;
+    font-family: Sora;
+    width: 64px;
+  }
+  li span{
+    display: block;
+  }
+
+  .section1{
+    background: url('asset/section-1.png') no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+    color: var(--primary);
+  }
+  .opening{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
+  .item h2{
+    font-family: 'Playfair Display';
+    color: var(--secondary);
+  }
+
+  .item__detail{
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .calon{
+    display: grid;
+    gap: 1rem;
+  }
+  .calon span{
+    color: var(--secondary);
+    font-size: 3rem;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+  }
+
+  ul{
+    justify-content: center;
+    padding: 0;
+  }
+  li span{
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .detailDate p{
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+
+  .section2{
+    background: url('asset/section-2.png') no-repeat;
+    background-size: cover;
+    padding: 3.5rem 1.5rem;
+  }
+  .section2 p{
+    margin-bottom: 2rem;
+  }
+  .card{
+    background: linear-gradient(110.63deg, #464665 5.88%, #6F645A 103.46%);
+border-radius: 12px;
+padding: 1.5rem;
+color: var(--text);
+  }
+  .card h3{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Sora;
+    margin-bottom: 1rem;
+  }
+  .card__item{
+    display: flex;
+    gap: 0.5rem;
+  }
+  .card__item img{
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .card__item p{
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
+
+  .cardDetail{
+    display: grid;
+    gap: 1rem;
+  }
+
+.groupCard{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section3{
+    background: var(--backgroundSubtle);
+    padding: 3rem 1.5rem;
+}
+.formUcapan{
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+input{
+    height: 42px;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0 0.75rem;
+    /* color: red; */
+}
+
+.section3 h3{
+    font-size: 1.5rem;
+    font-family: Sora;
+    color: var(--primary);
+}
+.section3 p{
+    color: var(--textDark);
+    opacity: 0.5;
+    margin-top: 1rem;
+}
+textarea{
+    border: none;
+    border-radius: 0.5rem;
+}
+input::placeholder, textarea::placeholder{
+    color: var(--textDark);
+    font-family: Sora;
+    opacity: 0.2;
+}
+
+.cardAmplop{
+    background: url('asset/bg-card.png') no-repeat;
+    background-size: cover;
+    border-radius: 0.75rem;
+    text-align: left;
+    justify-content: space-between;
+    display: flex;
+    padding: 1.5rem;
+    color: var(--text);
+}
+
+.secondary, .cta button{
+    margin: auto 0;
+}
+
+.section4{
+    padding: 3rem 1.5rem;
+    background: url('asset/section-4.png') no-repeat;
+    background-size: cover;
+}
+
+.cardAmplop h3{
+    font-size: 1rem;
+    font-family: Sora;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.detailBank{
+    display: grid;
+    gap: 1rem;
+}
+
+.section4 h2{
+    font-size: 1.5rem;
+    font-family: Sora;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section4 p{
+    color: var(--textDark);
+    opacity: 0.5;
+}
+.detailBank p{
+    color: var(--text);
+    opacity: 1;
+}
+
+.groupAmplop{
+    display: grid;
+    gap: 1rem;
+}
+
+.section4 h1{
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background:var(--text);
+    position: sticky;
+    bottom: 0;
+    padding: 0.5rem;
+}
+.itemMenu{
+    width: 4rem;
+}
+a{
+    color: var(--primary);
+    opacity: 0.4;
+    text-decoration: none;
+}
+.active{
+    color: var(--secondary) !important;
+    opacity: 1 !important;
+}
+.itemMenu img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.itemMenu p{
+    font-size: 0.875rem;
+}
