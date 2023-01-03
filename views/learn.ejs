@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">name</th>
+                    <th scope="col">message</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <% for (let msg of data) { %>
+                        <tr>
+                        <th scope="row"><%= msg.id %></th>
+                        <th scope="row"><%= msg.name %></th>
+                        <th scope="row"><%= msg.message %></th>
+                    </tr>
+                    <% } %>
+            </tbody>
+        </table>
+        <h3>Tambah Message</h3>
+        <form action="/tambah" method="post">
+            <input type="text" name="name" placeholder="name">
+            <input type="text" name="message" placeholder="message">
+            <input type="submit" value="Add" class="button primary">
+        </form>
+    </div>
+</body>
+</html>

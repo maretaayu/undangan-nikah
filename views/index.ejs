@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="containerContent">
+        <div class="hero" id="home">
+            <div class="detailWedding">
+                <p>The wedding of</p>
+                <h1>Mareta & Someone</h1>
+                <p>Minggu, 28 Januari 2023</p>
+            </div>
+        </div>
+
+        <div class="section1" id="wedding">
+            <div class="opening">
+                <p>Kami Akan Menikah,
+                    Dan Kami Ingin Anda Menjadi Bagian Dari Hari Istimewa Kami!</p>
+            </div>
+                <div class="calon">
+                    <div class="item">
+                        <img src="asset/girl.png" alt="Mareta">
+                        <div class="item__detail">
+                            <h2>Mareta</h2>
+                        <p>Putri Bapak xxx, Ibu yyy</p>
+                        <p>Address</p>
+                        </div>
+                    </div>
+                    <span>&</span>
+                    <div class="item">
+                        <img src="asset/boy.png" alt="Someone">
+                        <div class="item__detail">
+                            <h2>Someone</h2>
+                        <p>Putra Bapak xxx, Ibu yyy</p>
+                        <p>Address</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- countdown -->
+                <div id="countdown">
+                    <ul>
+                      <li><span id="days"></span>Hari</li>
+                      <li><span id="hours"></span>Jam</li>
+                      <li><span id="minutes"></span>Menit</li>
+                      <li><span id="seconds"></span>Detik</li>
+                    </ul>
+                  </div>
+                  <div id="content" class="emoji">
+                   <span>Udah nikah</span>
+                  </div>
+
+                  <div class="detailDate">
+                   <p> 28 Januari 2023</p>
+                  </div>
+        </div>
+        <div class="section2" id="date">
+            <p>Dengan Memohon Rahmat Dan Ridho Allah Subhanahu Wa Ta'ala, Kami Mengundang Bapak/Ibu/Saudara/I, Untuk Menghadiri Resepsi Pernikahan Kami. Yang Insya Allah Akan Dilaksanakan Pada :</p>
+            <div class="groupCard">
+                <div class="card">
+                    <h3>Detail Akad</h3>
+                    <div class="cardDetail">
+                        <div class="card__item">
+                            <img src="asset/ic-location.svg" alt="Icon Lokasi">
+                            <p>Jawa Tengah</p>
+                        </div>
+                        <div class="card__item">
+                            <img src="asset/ic-date.svg" alt="Icon Date">
+                            <p>28 Januari 2023</p>
+                        </div>
+                        <div class="card__item">
+                            <img src="asset/ic-clock.svg" alt="Icon Time">
+                            <p>10:00 - 12:00</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <h3>Detail Resepsi</h3>
+                    <div class="cardDetail">
+                        <div class="card__item">
+                            <img src="asset/ic-location.svg" alt="Icon Lokasi">
+                            <p>Jawa Tengah</p>
+                        </div>
+                        <div class="card__item">
+                            <img src="asset/ic-date.svg" alt="Icon Date">
+                            <p>28 Januari 2023</p>
+                        </div>
+                        <div class="card__item">
+                            <img src="asset/ic-clock.svg" alt="Icon Time">
+                            <p>10:00 - 12:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section3" id="message">
+            <h3>Ucapkan Sesuatu</h3>
+            <p>Berikan Ucapan Terbaik Untuk Kedua Mempelai</p>
+            <div class="formUcapan">
+                <form action="/tambah" method="post">
+                    <input type="text" name="name" placeholder="Nama Kamu">
+                <textarea name="message" id="txtarea" cols="30" rows="3" placeholder="Masukkan ucapan">
+                </textarea>
+                <input type="submit" value="Kirim" class="cta primary">
+                </form>
+            </div>
+            <div class="viewData">
+                <ul>
+                    <% for (let msg of data) { %>
+                        <li>
+                            <q><%= msg.message %></q><br>
+                            <b><%= msg.name %></b>
+                        </li>
+                    <% } %>
+                </ul>
+                
+            </div>
+            
+        </div>
+
+        <div class="section4" id="gift">
+            <h2>Amplop Digital</h2>
+            <p>Berikan Ucapan Terbaik Untuk Kedua Mempelai</p><br>
+            <div class="groupAmplop">
+                <div class="cardAmplop">
+                    <div>
+                        <h3>Rekening Bank</h3>
+                    <div class="detailBank">
+                        <p>Mandiri</p>
+                        <p>xxxxxxxxx</p>
+                        <p>username</p>
+                    </div>
+                    </div>
+                    <div class="cta secondary">
+                        <button>Salin</button>
+                    </div>
+                </div>
+    
+                <div class="cardAmplop">
+                   <div>
+                    <h3>E-Wallet</h3>
+                    <div class="detailBank">
+                        <p>DANA</p>
+                        <p>xxxxxxxxx</p>
+                        <p>username</p>
+                    </div>
+                   </div>
+                    <div class="cta secondary">
+                        <button>Salin</button>
+                    </div>
+                </div>
+            </div>
+<br><br>
+            <p>
+                Atas Kehadiran Dan Doa Restunya Kami Ucapkan Terimakasih.<br><br>
+            </p>
+            <p>Kami Yang Berbahagia,
+                Keluarga Besar Kedua Mempelai</p><br><br>
+            <h1>Mareta & Someone</h1>
+        </div>
+
+        <div class="menu">
+            <div class="itemMenu active">
+                <a href="#home">
+                    <img src="asset/ic_home.svg" alt="Icon Home">
+                <p>Home</p>
+                </a>
+            </div>
+            <div class="itemMenu">
+                <a href="#wedding">
+                    <img src="asset/ic_wedding.svg" alt="Icon Home">
+                <p>Wedding</p>
+                </a>
+            </div>
+            <div class="itemMenu">
+                <a href="#date">
+                    <img src="asset/ic_date.svg" alt="Icon Home">
+                <p>Date</p>
+                </a>
+            </div>
+            <div class="itemMenu">
+                <a href="#message">
+                    <img src="asset/ic_message.svg" alt="Icon Home">
+                <p>Message</p>
+                </a>
+            </div>
+            <div class="itemMenu">
+                <a href="#gift">
+                    <img src="asset/ic_gift.svg" alt="Icon Home">
+                <p>Gift</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="../js.js"></script>
+</body>
+</html>
