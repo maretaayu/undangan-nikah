@@ -33,7 +33,7 @@ db.connect((err) =>{
         const insertSql = `INSERT INTO tb_message (name, message) VALUES ('${req.body.name}', '${req.body.message}');`
         db.query(insertSql, (err, result) => {
             if (err) throw err
-            res.redirect("/")
+            res.redirect("/#message")
         })
     })
 

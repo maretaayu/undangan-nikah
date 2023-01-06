@@ -288,7 +288,9 @@ input{
     padding: 0 0.75rem;
     /* color: red; */
 }
-
+.section2 p{
+  color: var(--primary);
+}
 .section3 h3{
     font-size: 1.5rem;
     font-family: Sora;
