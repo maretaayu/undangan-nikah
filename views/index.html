@@ -18,17 +18,23 @@
         </div>
 
         <div class="date">
-            <p>Minggu, 1 Januari 2023</p>
+            <p>Minggu, 28 Januari 2023</p>
         </div>
 
         <div class="username">
             <p>To:</p>
-            <p><b>Nama Orang</b></p>
+            <p><b id="user"></b></p>
         </div><br><br>
 
         <div class="cta primary">
-            <button>Buka Undangan</button>
+            <a href="/content">buka undangan</a>
         </div>
     </div>
+    <script>
+         const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const username = urlParams.get('to')
+document.getElementById("user").innerHTML = username;
+    </script>
 </body>
 </html>

@@ -71,7 +71,7 @@
     height: 100vh;
     background-size: cover;
     text-align: center;
-    padding: 0 1.5rem;
+    /* padding: 0 1.5rem; */
     position: relative;
   }
   
@@ -118,7 +118,7 @@
     color: var(--text);
   }
 
-  .cta button{
+  .cta button, .cta a{
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     font-family: Sora;
@@ -126,8 +126,12 @@
     margin-top: 4rem;
     border: none;
 }
-.primary{
+.primary, .primary button, .primary a{
     color: var(--text);
+    border-radius: 0.5rem;
+    opacity: 1;
+    width: fit-content;
+    margin: auto;
     background: var(--secondary);
 }
 .secondary button{
@@ -288,7 +292,7 @@ input{
     padding: 0 0.75rem;
     /* color: red; */
 }
-.section2 p{
+p.opening{
   color: var(--primary);
 }
 .section3 h3{
@@ -412,4 +416,9 @@ a{
   margin-bottom: 0.5rem;
   opacity: 0.3;
   font-family: Sora;
+}
+
+.viewData{
+  max-height: 400px;
+  overflow-y: scroll;
 }

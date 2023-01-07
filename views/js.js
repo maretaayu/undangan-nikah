@@ -46,3 +46,13 @@
     const textarea = document.getElementById('txtarea');
     textarea.value='';
     
+
+    // const cover = document.querySelector(".cover");
+    // const content = document.querySelector(".containerContent");
+
+    // function showHide (){
+    //   cover.style.display="none";
+    //   content.style.display = "block";
+    // }
+
+   

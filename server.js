@@ -1,11 +1,13 @@
 const express = require('express')
 const mysql = require('mysql')
-const BodyParser = require ("body-parser")
+const BodyParser = require ("body-parser");
+const { query } = require('express');
 
 const app = express();
 app.use(BodyParser.urlencoded({extended: true}))
 app.set("view engine", "ejs")
-app.set("views", "views")
+
+// app.set("views", "views")
 app.use(express.static(__dirname + '/views'));
 const db = mysql.createConnection({
     host: "localhost",
@@ -20,11 +22,11 @@ db.connect((err) =>{
     
 
      // untuk get data 
-     app.get("/", (req, res) => {
+     app.get("/content/", (req, res) => {
         const sql = "SELECT * FROM tb_message ORDER BY id DESC"
         db.query(sql, (err, result) =>{
             const data = JSON.parse(JSON.stringify(result))
-            res.render("index", {data: data})
+            res.render("content", {data : data})
         })
     })
 
@@ -33,7 +35,7 @@ db.connect((err) =>{
         const insertSql = `INSERT INTO tb_message (name, message) VALUES ('${req.body.name}', '${req.body.message}');`
         db.query(insertSql, (err, result) => {
             if (err) throw err
-            res.redirect("/#message")
+            res.redirect("/content#message");
         })
     })
 
@@ -43,3 +45,4 @@ db.connect((err) =>{
 app.listen(8000, () => {
     console.log("server ready...")
 })
+
