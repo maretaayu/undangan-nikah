@@ -4,6 +4,7 @@ Thanks for watching my content, hope you enjoy it!
 > We've learned:
 - How to design user interface for wedding invitation 
   - Figma: https://tinyurl.com/figmaundangan
+  - Tutorial: https://drive.google.com/drive/folders/1E371roYiadSoX54kJJJBNpS3QL3xuaSL?usp=sharing
 - How to code template using HTML / CSS/ JS
   - Tutorial: https://drive.google.com/file/d/1n0MHsJvYaRdjxicjJrWR7vu1PBKq-HKW/view?usp=share_link
 - How to integrate our website to database MySQL x Express JS 
