@@ -8,7 +8,7 @@ Thanks for watching my content, hope you enjoy it!
 - How to code template using HTML / CSS/ JS
   - Tutorial: https://drive.google.com/file/d/1n0MHsJvYaRdjxicjJrWR7vu1PBKq-HKW/view?usp=share_link
 - How to integrate our website to database MySQL x Express JS 
-  - Tutorial: https://drive.google.com/drive/folders/1hGOtS3MAUxuuwwIiEHwOS95tdtDsVCXz?usp=sharing
+  - Tutorial: https://drive.google.com/file/d/1KndXaEvKSuS0lHJDY5b0gM8EOHVC4pCm/view?usp=share_link
 
 > You'll need:
 - Install Node.JS https://nodejs.org/en/download/
