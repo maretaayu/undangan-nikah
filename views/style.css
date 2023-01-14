@@ -175,15 +175,27 @@
   #countdown li{
     list-style: none;
     background: var(--primary);
+    /* animation: fadeIn 4s infinite; */
+    /* animation-name: changeColor; */
+    /* animation-duration: 14s; */
+    /* animation-iteration-count: infinite; */
     padding: 1rem;
     color: var(--text);
     border-radius: 0.25rem;
     font-family: Sora;
     width: 64px;
+    animation: ColorChange 10s infinite;
   }
   li span{
     display: block;
   }
+/* 
+  .girl{
+    animation: fadeInLeft 4s infinite;
+  }
+  .boy{
+    animation: fadeInRight 4s infinite;
+  } */
 
   .section1{
     background: url('asset/section-1.png') no-repeat;
@@ -421,4 +433,83 @@ a{
 .viewData{
   max-height: 400px;
   overflow-y: scroll;
+}
+
+/* CSS Animation */
+
+@keyframes changeColor{
+  0%{
+    background: pink;
+  }
+  50%{
+    background: violet;
+  }
+  100%{
+    background: blue;
+  }
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+    /* transform: translateX(-20px); */
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft{
+  from{
+    opacity: 0;
+    transform: translateX(-20px);
+    /* transform: translateX(-20px); */
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight{
+  from{
+    opacity: 0;
+    transform: translateX(20px);
+    /* transform: translateX(-20px); */
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* @keyframes changeColor{
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+} */
+
+.box{ 
+  /* animation: fadeInLeft 1s; */
+  transform: translateY(100px);
+  transition: transform 1s ease;
+ }
+ .box.show{
+  transform: translateY(0);
+ }
+
+/* .box:nth-of-type(even){
+  transform: translateX(-100%);
+} */
+
+
+@keyframes ColorChange {
+  from{
+    background-color: violet;
+  }
+  to{
+    background-color: purple;
+  }
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -24,7 +25,7 @@
                     Dan Kami Ingin Anda Menjadi Bagian Dari Hari Istimewa Kami!</p>
             </div>
                 <div class="calon">
-                    <div class="item">
+                    <div class="item " data-aos="flip-right">
                         <img src="asset/girl.png" alt="Mareta">
                         <div class="item__detail">
                             <h2>Mareta</h2>
@@ -33,7 +34,7 @@
                         </div>
                     </div>
                     <span>&</span>
-                    <div class="item">
+                    <div class="item" data-aos="flip-left">
                         <img src="asset/boy.png" alt="Someone">
                         <div class="item__detail">
                             <h2>Someone</h2>
@@ -63,7 +64,7 @@
         <div class="section2" id="date">
             <p class="opening">Dengan Memohon Rahmat Dan Ridho Allah Subhanahu Wa Ta'ala, Kami Mengundang Bapak/Ibu/Saudara/I, Untuk Menghadiri Resepsi Pernikahan Kami. Yang Insya Allah Akan Dilaksanakan Pada :</p>
             <div class="groupCard">
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <h3>Detail Akad</h3>
                     <div class="cardDetail">
                         <div class="card__item">
@@ -81,7 +82,7 @@
                     </div>
                 </div>
     
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <h3>Detail Resepsi</h3>
                     <div class="cardDetail">
                         <div class="card__item">
@@ -130,7 +131,7 @@
             <h2>Amplop Digital</h2>
             <p>Berikan Ucapan Terbaik Untuk Kedua Mempelai</p><br>
             <div class="groupAmplop">
-                <div class="cardAmplop">
+                <div class="cardAmplop" data-aos="zoom-out">
                     <div>
                         <h3>Rekening Bank</h3>
                     <div class="detailBank">
@@ -144,7 +145,7 @@
                     </div>
                 </div>
     
-                <div class="cardAmplop">
+                <div class="cardAmplop" data-aos="zoom-out">
                    <div>
                     <h3>E-Wallet</h3>
                     <div class="detailBank">
@@ -164,7 +165,7 @@
             </p>
             <p>Kami Yang Berbahagia,
                 Keluarga Besar Kedua Mempelai</p><br><br>
-            <h1>Mareta & Someone</h1>
+            <h1 >Mareta & Someone</h1>
         </div>
 
         <div class="menu">
@@ -200,6 +201,10 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="../js.js"></script>
 </body>
 </html>
